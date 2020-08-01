@@ -137,7 +137,7 @@ void read_employee_table(employee_table& table, std::string& line)
 		if(!isAlpha(data[2]))
 			table[stoi(data[0])].add_customer(stoi(data[2]));
 	}
-	std::cout << table.str();
+	//std::cout << table.str();
 	myfile.close();
 }
 
@@ -156,7 +156,7 @@ void read_product_table(product_table& table, std::string& line)
 			isAlpha(data[4]) == false)
 			table.add(stoi(data[0]), Product(data[1], stod(data[2]), stoi(data[3]), stod(data[4])));
 	}
-	std::cout << table.str();
+	//std::cout << table.str();
 	myfile.close();
 
 }
